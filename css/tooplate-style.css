@@ -109,7 +109,7 @@ h5 {
 }
 
 .container {
-	float: right;
+	/*float: right;*/
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
