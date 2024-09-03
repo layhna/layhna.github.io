@@ -306,8 +306,6 @@ h5 {
 .calendar-body div {
 	background: rgba(255,255,255,0.3);
 	text-align: right;
-	padding: 5px;	
-	padding-bottom: 33px;
 }
 .active-day {
 	background: rgba(255,255,255,1) !important;
