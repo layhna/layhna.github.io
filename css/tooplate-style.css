@@ -271,9 +271,22 @@ h5 {
 }
 
 
+
+@media screen and (max-width: 991px) {
+	.full-width {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -49vw;
+	}
+}
+
+
 /* -- CALENDAR -- */
 .calendar {
-    width: 100%;
+	width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 	font-size: 11pt;
@@ -289,30 +302,40 @@ h5 {
 .calendar-days {
     display: inline-grid;
 	grid-template-columns: [sun] 2fr [mon] 1fr [tue] 2fr [wed] 2fr [thr] 2fr [fri] 1fr [sat] 1fr;
-    gap: 1px;
+    gap: 0px;
+	background: rgba(255,255,255,0.5);
 	text-align: center;
 }
 .calendar-days div {	
-	background: rgba(255,255,255,0.5);
 	font-weight: bold;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
 	padding: 11px;
 }
 .calendar-body {
     display: inline-grid;
-	grid-template-columns: [sun] 2fr [mon] 1fr [tue] 2fr [wed] 2fr [thr] 2fr [fri] 1fr [sat] 1fr;
-    gap: 1px;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0px;
+	background: rgba(255,255,255,0.4);
 	margin-bottom: 20px;
+	min-width: 0;
 }
 .calendar-body div {
-	background: rgba(255,255,255,0.3);
 	text-align: right;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding: 5px 5px 20px;
 }
 .active-day {
-	background: rgba(255,255,255,1) !important;
+	background: rgba(255,255,255,0.7) !important;
 	font-weight: bold;
 }
 .active-day p {
 	text-align: left;
+	white-space: nowrap;
+	text-overflow: fade;
+	overflow: visible;
 	color: #000;
 	background-color: #ffc107;
+	margin: 5px -5px !important;
 }
