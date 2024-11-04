@@ -21,13 +21,15 @@ https://templatemo.com/tm-521-get-ready
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+	font-size: 18px;
   }
 
 
 
+
   /*---------------------------------------
-     TYPOGRAPHY              
-  -----------------------------------------*/
+     TYPOGRAPHY    
+ -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
@@ -38,7 +40,7 @@ https://templatemo.com/tm-521-get-ready
 	font-family: "Gwendolyn", cursive;
 	font-weight: 700;
     color: #ffffff;
-    font-size: 9em;
+    font-size: 11vw;
   }
 
   h2 {
@@ -48,7 +50,7 @@ https://templatemo.com/tm-521-get-ready
   
   h4{
     color: #ffffff;
-    font-size: 5em;
+    font-size: 5vw;
     display: inline-block;
   }
   
@@ -377,7 +379,7 @@ https://templatemo.com/tm-521-get-ready
   }
 
   .countdown span {
-    font-size: 59px;
+    font-size: 5vw;
   }
   
 
@@ -438,7 +440,13 @@ https://templatemo.com/tm-521-get-ready
      RESPONSIVE STYLES              
   -----------------------------------------*/
 
-  @media screen and (max-width: 480px) {
+	@media screen and (min-width: 1331px) {
+		h1 {font-size: 159px;}
+		h4, .countdown span {font-size: 59px;}
+	}
+
+
+  @media screen and (max-width: 1042px) {
 
     .home-info {
       padding: 0 1em 0 1em;
@@ -456,8 +464,8 @@ https://templatemo.com/tm-521-get-ready
   @media screen and (max-width: 360px) {
 
     h1 {
-      font-size: 1.50em;
-    }
+      font-size: 59px;
+    } 
 
     .menu-items {
       margin: 100px 0;
@@ -467,7 +475,7 @@ https://templatemo.com/tm-521-get-ready
       font-size: 20px;
     }
 
-    .countdown h3 {
+    .countdown h3, h4 {
       font-size: 12px;
     }
   }
