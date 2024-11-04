@@ -463,19 +463,15 @@ https://templatemo.com/tm-521-get-ready
 
   @media screen and (max-width: 644px) {
 
-    h1 {
-      font-size: 59px;
-    } 
+    h1 { font-size: 59px;    } 
 
-    .menu-items {
-      margin: 100px 0;
-    }
+    .menu-items { margin: 100px 0; }
 
-    .countdown span {
+    .countdown span { font-size: 20px; }
+	
+	h4 {font-size: 25px;}
+
+    .countdown h3 {
       font-size: 20px;
-    }
-
-    .countdown h3, h4 {
-      font-size: 12px;
     }
   }
